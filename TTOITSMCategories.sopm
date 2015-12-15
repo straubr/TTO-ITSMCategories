@@ -4,7 +4,8 @@
     <Framework>5.x</Framework>
     <Vendor>TTO GmbH</Vendor>
     <URL>http://tto.de</URL>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
+    <ChangeLog Version="1.0.1">Bugfix </ChangeLog>
     <ChangeLog Version="1.0.0">First public release </ChangeLog>
     <License>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</License>
     <BuildDate>?</BuildDate>
