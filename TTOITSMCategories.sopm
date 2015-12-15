@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<otrs_package version="1.0">
+    <Name>TTO-ITSMCategories</Name>
+    <Framework>5.x</Framework>
+    <Vendor>TTO GmbH</Vendor>
+    <URL>http://tto.de</URL>
+    <Version>1.0.0</Version>
+    <ChangeLog Version="1.0.0">First public release </ChangeLog>
+    <License>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</License>
+    <BuildDate>?</BuildDate>
+    <BuildHost>?</BuildHost>
+    <PackageRequired Version="5.x">ITSM</PackageRequired>
+    <Description Lang="en">Adds an additional filter bar for CI-classes.</Description>
+    <Description Lang="de">Fügt eine zusätzliche Filter Leiste für CI Klassen hinzu.</Description>
+    <IntroInstall Type="post" Lang="en" Title="Information"><![CDATA[
+To use this package, you have to activate and configure the category filters in the SysConfig under:<br>
+ITSM Configuration Management -> Frontend::Agent::ITSMConfigItemOverview::Categories
+]]></IntroInstall>
+    <IntroInstall Type="post" Lang="de" Title="Information"><![CDATA[
+Um diese Paket zu nutzen, müssen in der SysConfig die Kategorie Filter aktiviert und konfiguriert werden:<br>
+ITSM Configuration Management -> Frontend::Agent::ITSMConfigItemOverview::Categories
+]]></IntroInstall>
+    <Filelist>
+        <File Permission="644" Location="Custom/Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemOverviewNavBar.tt"/>
+        <File Permission="644" Location="Custom/Kernel/Modules/AgentITSMConfigItem.pm"/>
+        <File Permission="644" Location="Custom/Kernel/Output/HTML/Layout/ITSMConfigItem.pm"/>
+        <File Permission="644" Location="Kernel/Config/Files/ITSMCategories.xml"/>
+    </Filelist>
+</otrs_package>
+
